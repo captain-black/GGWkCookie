@@ -66,7 +66,7 @@ var app_rootDomain = document.domain.split('.').slice(-2).join('.');
 
 // 添加cookie,且直接添加在根域名
 function app_setCookie(name, value) {
-    DocCookies.setItem(name, value, null, '/', app_rootDomain);
+    DocCookies.setItem(name, value, 604800/*一周时间*/, '/', app_rootDomain);
 }
 
 
